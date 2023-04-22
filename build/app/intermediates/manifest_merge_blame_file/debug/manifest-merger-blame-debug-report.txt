@@ -1,0 +1,191 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.quantumapp"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->D:\Arvind_workspace\projects\quantumapp\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->D:\Arvind_workspace\projects\quantumapp\android\app\src\debug\AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.android.gms:play-services-measurement-api:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\277535db3e8a82e614ac43649c529a26\jetified-play-services-measurement-api-17.6.0\AndroidManifest.xml:23:5-79
+15-->[com.google.android.gms:play-services-measurement-api:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\277535db3e8a82e614ac43649c529a26\jetified-play-services-measurement-api-17.6.0\AndroidManifest.xml:23:22-76
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->[com.google.android.gms:play-services-measurement-api:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\277535db3e8a82e614ac43649c529a26\jetified-play-services-measurement-api-17.6.0\AndroidManifest.xml:24:5-68
+16-->[com.google.android.gms:play-services-measurement-api:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\277535db3e8a82e614ac43649c529a26\jetified-play-services-measurement-api-17.6.0\AndroidManifest.xml:24:22-65
+17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+17-->[com.google.android.gms:play-services-measurement:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\90901b85b10992312551ff99ea26e4d8\jetified-play-services-measurement-17.6.0\AndroidManifest.xml:26:5-110
+17-->[com.google.android.gms:play-services-measurement:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\90901b85b10992312551ff99ea26e4d8\jetified-play-services-measurement-17.6.0\AndroidManifest.xml:26:22-107
+18
+19    <application
+20        android:name="android.app.Application"
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\122dc1d74480d0590ad24abea2049371\core-1.6.0\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+24        android:label="quantumapp" >
+25        <activity
+26            android:name="com.example.quantumapp.MainActivity"
+27            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+28            android:exported="true"
+29            android:hardwareAccelerated="true"
+30            android:launchMode="singleTop"
+31            android:theme="@style/LaunchTheme"
+32            android:windowSoftInputMode="adjustResize" >
+33
+34            <!--
+35                 Specifies an Android theme to apply to this Activity as soon as
+36                 the Android process has started. This theme is visible to the user
+37                 while the Flutter UI initializes. After that, this theme continues
+38                 to determine the Window background behind the Flutter UI.
+39            -->
+40            <meta-data
+41                android:name="io.flutter.embedding.android.NormalTheme"
+42                android:resource="@style/NormalTheme" />
+43
+44            <intent-filter>
+45                <action android:name="android.intent.action.MAIN" />
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+48            </intent-filter>
+49        </activity>
+50        <!--
+51             Don't delete the meta-data below.
+52             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+53        -->
+54        <meta-data
+55            android:name="flutterEmbedding"
+56            android:value="2" />
+57
+58        <service
+58-->[:firebase_auth] D:\Arvind_workspace\projects\quantumapp\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+59            android:name="com.google.firebase.components.ComponentDiscoveryService"
+59-->[:firebase_auth] D:\Arvind_workspace\projects\quantumapp\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+60            android:directBootAware="true"
+60-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\8160861270e06cc8b80b906f2790238e\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+61            android:exported="false" >
+61-->[com.google.firebase:firebase-auth:19.4.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\799753cd2d26dfb47b26ce8044f204e2\jetified-firebase-auth-19.4.0\AndroidManifest.xml:35:13-37
+62            <meta-data
+62-->[:firebase_auth] D:\Arvind_workspace\projects\quantumapp\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+63                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+63-->[:firebase_auth] D:\Arvind_workspace\projects\quantumapp\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+64                android:value="com.google.firebase.components.ComponentRegistrar" />
+64-->[:firebase_auth] D:\Arvind_workspace\projects\quantumapp\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+65            <meta-data
+65-->[:firebase_core] D:\Arvind_workspace\projects\quantumapp\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+66                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+66-->[:firebase_core] D:\Arvind_workspace\projects\quantumapp\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+67                android:value="com.google.firebase.components.ComponentRegistrar" />
+67-->[:firebase_core] D:\Arvind_workspace\projects\quantumapp\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+68            <meta-data
+68-->[com.google.firebase:firebase-auth:19.4.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\799753cd2d26dfb47b26ce8044f204e2\jetified-firebase-auth-19.4.0\AndroidManifest.xml:36:13-38:85
+69                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+69-->[com.google.firebase:firebase-auth:19.4.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\799753cd2d26dfb47b26ce8044f204e2\jetified-firebase-auth-19.4.0\AndroidManifest.xml:37:17-109
+70                android:value="com.google.firebase.components.ComponentRegistrar" />
+70-->[com.google.firebase:firebase-auth:19.4.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\799753cd2d26dfb47b26ce8044f204e2\jetified-firebase-auth-19.4.0\AndroidManifest.xml:38:17-82
+71            <meta-data
+71-->[com.google.android.gms:play-services-measurement-api:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\277535db3e8a82e614ac43649c529a26\jetified-play-services-measurement-api-17.6.0\AndroidManifest.xml:30:13-32:85
+72                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+72-->[com.google.android.gms:play-services-measurement-api:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\277535db3e8a82e614ac43649c529a26\jetified-play-services-measurement-api-17.6.0\AndroidManifest.xml:31:17-139
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[com.google.android.gms:play-services-measurement-api:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\277535db3e8a82e614ac43649c529a26\jetified-play-services-measurement-api-17.6.0\AndroidManifest.xml:32:17-82
+74            <meta-data
+74-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\2576091a5218a56b96bcf239e7972001\jetified-firebase-installations-16.3.2\AndroidManifest.xml:17:13-19:85
+75                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+75-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\2576091a5218a56b96bcf239e7972001\jetified-firebase-installations-16.3.2\AndroidManifest.xml:18:17-127
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\2576091a5218a56b96bcf239e7972001\jetified-firebase-installations-16.3.2\AndroidManifest.xml:19:17-82
+77        </service>
+78
+79        <uses-library
+79-->[androidx.window:window:1.0.0-beta04] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\2bceeccd04384baa0ddbba057fb5bee3\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+80            android:name="androidx.window.extensions"
+80-->[androidx.window:window:1.0.0-beta04] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\2bceeccd04384baa0ddbba057fb5bee3\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+81            android:required="false" />
+81-->[androidx.window:window:1.0.0-beta04] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\2bceeccd04384baa0ddbba057fb5bee3\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+82        <uses-library
+82-->[androidx.window:window:1.0.0-beta04] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\2bceeccd04384baa0ddbba057fb5bee3\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+83            android:name="androidx.window.sidecar"
+83-->[androidx.window:window:1.0.0-beta04] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\2bceeccd04384baa0ddbba057fb5bee3\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+84            android:required="false" />
+84-->[androidx.window:window:1.0.0-beta04] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\2bceeccd04384baa0ddbba057fb5bee3\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+85
+86        <activity
+86-->[com.google.firebase:firebase-auth:19.4.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\799753cd2d26dfb47b26ce8044f204e2\jetified-firebase-auth-19.4.0\AndroidManifest.xml:24:9-31:50
+87            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+87-->[com.google.firebase:firebase-auth:19.4.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\799753cd2d26dfb47b26ce8044f204e2\jetified-firebase-auth-19.4.0\AndroidManifest.xml:25:13-85
+88            android:excludeFromRecents="true"
+88-->[com.google.firebase:firebase-auth:19.4.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\799753cd2d26dfb47b26ce8044f204e2\jetified-firebase-auth-19.4.0\AndroidManifest.xml:26:13-46
+89            android:exported="true"
+89-->[com.google.firebase:firebase-auth:19.4.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\799753cd2d26dfb47b26ce8044f204e2\jetified-firebase-auth-19.4.0\AndroidManifest.xml:27:13-36
+90            android:launchMode="singleTask"
+90-->[com.google.firebase:firebase-auth:19.4.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\799753cd2d26dfb47b26ce8044f204e2\jetified-firebase-auth-19.4.0\AndroidManifest.xml:28:13-44
+91            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+91-->[com.google.firebase:firebase-auth:19.4.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\799753cd2d26dfb47b26ce8044f204e2\jetified-firebase-auth-19.4.0\AndroidManifest.xml:29:13-102
+92            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+92-->[com.google.firebase:firebase-auth:19.4.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\799753cd2d26dfb47b26ce8044f204e2\jetified-firebase-auth-19.4.0\AndroidManifest.xml:30:13-72
+93        <activity
+93-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\68f58c2d51ff1fc187ee58acf55ee0b0\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+94            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+94-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\68f58c2d51ff1fc187ee58acf55ee0b0\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+95            android:exported="false"
+95-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\68f58c2d51ff1fc187ee58acf55ee0b0\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+96            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+96-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\68f58c2d51ff1fc187ee58acf55ee0b0\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+97
+98        <provider
+98-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\8160861270e06cc8b80b906f2790238e\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+99            android:name="com.google.firebase.provider.FirebaseInitProvider"
+99-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\8160861270e06cc8b80b906f2790238e\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+100            android:authorities="com.example.quantumapp.firebaseinitprovider"
+100-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\8160861270e06cc8b80b906f2790238e\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+101            android:exported="false"
+101-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\8160861270e06cc8b80b906f2790238e\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+102            android:initOrder="100" />
+102-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\8160861270e06cc8b80b906f2790238e\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+103
+104        <receiver
+104-->[com.google.android.gms:play-services-measurement:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\90901b85b10992312551ff99ea26e4d8\jetified-play-services-measurement-17.6.0\AndroidManifest.xml:29:9-33:20
+105            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+105-->[com.google.android.gms:play-services-measurement:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\90901b85b10992312551ff99ea26e4d8\jetified-play-services-measurement-17.6.0\AndroidManifest.xml:30:13-85
+106            android:enabled="true"
+106-->[com.google.android.gms:play-services-measurement:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\90901b85b10992312551ff99ea26e4d8\jetified-play-services-measurement-17.6.0\AndroidManifest.xml:31:13-35
+107            android:exported="false" >
+107-->[com.google.android.gms:play-services-measurement:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\90901b85b10992312551ff99ea26e4d8\jetified-play-services-measurement-17.6.0\AndroidManifest.xml:32:13-37
+108        </receiver>
+109
+110        <service
+110-->[com.google.android.gms:play-services-measurement:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\90901b85b10992312551ff99ea26e4d8\jetified-play-services-measurement-17.6.0\AndroidManifest.xml:35:9-38:40
+111            android:name="com.google.android.gms.measurement.AppMeasurementService"
+111-->[com.google.android.gms:play-services-measurement:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\90901b85b10992312551ff99ea26e4d8\jetified-play-services-measurement-17.6.0\AndroidManifest.xml:36:13-84
+112            android:enabled="true"
+112-->[com.google.android.gms:play-services-measurement:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\90901b85b10992312551ff99ea26e4d8\jetified-play-services-measurement-17.6.0\AndroidManifest.xml:37:13-35
+113            android:exported="false" />
+113-->[com.google.android.gms:play-services-measurement:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\90901b85b10992312551ff99ea26e4d8\jetified-play-services-measurement-17.6.0\AndroidManifest.xml:38:13-37
+114        <service
+114-->[com.google.android.gms:play-services-measurement:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\90901b85b10992312551ff99ea26e4d8\jetified-play-services-measurement-17.6.0\AndroidManifest.xml:39:9-43:72
+115            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+115-->[com.google.android.gms:play-services-measurement:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\90901b85b10992312551ff99ea26e4d8\jetified-play-services-measurement-17.6.0\AndroidManifest.xml:40:13-87
+116            android:enabled="true"
+116-->[com.google.android.gms:play-services-measurement:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\90901b85b10992312551ff99ea26e4d8\jetified-play-services-measurement-17.6.0\AndroidManifest.xml:41:13-35
+117            android:exported="false"
+117-->[com.google.android.gms:play-services-measurement:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\90901b85b10992312551ff99ea26e4d8\jetified-play-services-measurement-17.6.0\AndroidManifest.xml:42:13-37
+118            android:permission="android.permission.BIND_JOB_SERVICE" />
+118-->[com.google.android.gms:play-services-measurement:17.6.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\90901b85b10992312551ff99ea26e4d8\jetified-play-services-measurement-17.6.0\AndroidManifest.xml:43:13-69
+119
+120        <meta-data
+120-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\82031187edefca225bd12160b7892d5a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+121            android:name="com.google.android.gms.version"
+121-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\82031187edefca225bd12160b7892d5a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+122            android:value="@integer/google_play_services_version" />
+122-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Arvind\.gradle\caches\transforms-2\files-2.1\82031187edefca225bd12160b7892d5a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+123    </application>
+124
+125</manifest>
