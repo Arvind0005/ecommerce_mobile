@@ -12,13 +12,13 @@ class CommonWidgets {
     return Row(
       children: [
         SizedBox(
-          width: width / 36,
+          width: 10,
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Material(
             elevation: 10,
-            borderRadius: BorderRadius.circular(width / 36),
+            borderRadius: BorderRadius.circular(10),
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),

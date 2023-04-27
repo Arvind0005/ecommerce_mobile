@@ -42,19 +42,13 @@ class _ProductDetailState extends State<ProductDetail> {
                   borderRadius: BorderRadius.circular(10)),
               color: Colors.red,
               onPressed: () async {
-                // print(widget.productModel);
-                // print(widget.productModel.description);
                 String productString = json.encode(widget.productModel);
-                print("heeeeeeeeeeelo");
-                // print(productString);
-                // print(items);
+
                 if (items == [])
                   items.insert(0, productString);
                 else
                   items.add(productString);
                 await _prefs.setStringList('cart', items);
-                print("string in local");
-                print(_prefs.getStringList('cart'));
               },
               child: Text(title)),
         ),

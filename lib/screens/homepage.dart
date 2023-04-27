@@ -38,6 +38,9 @@ class _HomePageState extends State<HomePage> {
     _productModel = await ApiService().getProducts();
     _categories = await ApiService().getCategories();
     _otherproducts = await ApiService().getotherProducts();
+    print("xxxxxxxxxxxxxuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu");
+    print(_productModel);
+    print("\ncate ${_categories}\n${_otherproducts}");
     setState(() {
       loading = false;
     });
